@@ -129,6 +129,3 @@ const value = await client.get("session:123");
 |---|---|
 | `keys(pattern)` | List keys matching a glob pattern |
 | `scan(cursor, pattern)` | Paginate through keys matching a pattern |
-## License
-
-[MIT](LICENSE)
