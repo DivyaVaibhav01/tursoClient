@@ -1,5 +1,7 @@
 <div align="center">
-Turso Client
+
+
+# 🚀 Turso Redis Client
 
 **A key value store built on Turso (SQLite)**
 
