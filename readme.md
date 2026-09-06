@@ -1,5 +1,5 @@
 <div align="center">
-# Turso Client
+Turso Client
 
 **A key value store built on Turso (SQLite)**
 
