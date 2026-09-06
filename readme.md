@@ -1,8 +1,8 @@
 <div align="center">
 
-<div style="display: flex; align-items: center; gap: 10px;">
-    <img src="https://github.com/DivyaVaibhav01/tursoClient/blob/main/extra/turso.svg" alt="Turso Logo" style="height: 200px; width: auto;" />
-    <span style="font-size: 200px; line-height: 1; font-weight: bold;">Client</span>
+<div style="display: flex; align-items: center; gap: 0;">
+    <img src="https://github.com/DivyaVaibhav01/tursoClient/blob/main/extra/turso.svg" alt="Turso Logo" style="height: 100px; width: auto; display: block;" />
+    <span style="font-size: 100px; font-weight: bold; line-height: 1;">Client</span>
 </div>
 
 **A key value store built on Turso (SQLite)**
