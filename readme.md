@@ -1,6 +1,8 @@
 <div align="center">
 
-# Turso Client
+<img src="./assets/banner.svg" alt="Turso Redis Client banner" width="100%" />
+
+# Turso Redis Client
 
 **A Redis-like key-value store built on Turso (SQLite)**
 
@@ -38,6 +40,37 @@ Turso Redis Client gives you a familiar Redis-style API — `get`, `set`, `expir
 - **Auto cleanup** — expired keys are purged automatically
 - **Pattern matching** — `keys()` and `scan()` support glob patterns
 - **Distributed locks** — coordinate across processes
+
+## Architecture
+
+A quick look at how a command flows from your app down to Turso's edge storage:
+
+```mermaid
+flowchart LR
+    subgraph App["🖥️ Your App"]
+        A[Client SDK]
+    end
+    subgraph Layer["⚡ Turso Redis Client"]
+        B[Command Router]
+        C[TTL Engine]
+        D[Batch Executor]
+    end
+    subgraph Storage["🗄️ Turso · SQLite Edge"]
+        E[(Key-Value Table)]
+        F[(Expiry Index)]
+    end
+
+    A -->|get / set / incr| B
+    B --> C
+    B --> D
+    C --> F
+    D --> E
+    E -.->|auto-purge expired| F
+
+    style App fill:#1a1443,color:#fff,stroke:#4f9dff
+    style Layer fill:#20265e,color:#fff,stroke:#6ffbe0
+    style Storage fill:#0f0c29,color:#fff,stroke:#2fd9c4
+```
 
 ## Installation
 
