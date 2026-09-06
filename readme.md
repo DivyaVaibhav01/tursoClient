@@ -1,86 +1,106 @@
 <div align="center">
 
-# 🚀 Turso Redis Client
+# Turso Client
 
-### *Redis-like Key-Value Store on Turso (SQLite)*
+**A Redis-like key-value store built on Turso (SQLite)**
 
-[![Bun](https://img.shields.io/badge/Bun-1.3.14-000000?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Turso](https://img.shields.io/badge/Turso-Cloud-4F46E5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyQzIgMTcuNTIgNi40OCAyMiAxMiAyMkMxNy41MiAyMiAyMiAxNy41MiAyMiAxMkMyMiA2LjQ4IDE3LjUyIDIgMTIgMloiIGZpbGw9IiM0RjQ2RTUiLz4KPHBhdGggZD0iTTEyIDZMMTYgMTJMMTIgMThMOCAxMkwxMiA2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+&logoColor=white)](https://turso.tech)
-
+[![Bun](https://img.shields.io/badge/Bun-1.3.14-000000?style=flat-square&logo=bun&logoColor=white)](https://bun.sh)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![npm version](https://img.shields.io/npm/v/turso-redis-client?style=flat-square&color=4F46E5)](https://www.npmjs.com/package/turso-redis-client)
-[![License](https://img.shields.io/badge/License-MIT-4F46E5?style=flat-square)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-4F46E5?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-4F46E5?style=flat-square)](CONTRIBUTING.md)
 
 </div>
 
 ---
 
-<div align="center">
+## Overview
 
-## 🎨 Interactive 3D Preview
+Turso Redis Client gives you a familiar Redis-style API — `get`, `set`, `expire`, `incr`, `scan`, and more — backed by [Turso](https://turso.tech), a distributed SQLite database. Use it when you want Redis-like ergonomics without running a separate Redis instance, and you're already on (or want) SQLite-based storage.
 
-```ascii
-    .---.        .---.        .---.
-   /     \      /     \      /     \
-  |  🔥   |    |  🚀   |    |  ⚡   |
-   \     /      \     /      \     /
-    '---'        '---'        '---'
-    Redis        Turso        Cache
-    Like         Power        Layer
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| [Turso](https://turso.tech) | Distributed SQLite database (storage layer) |
+| [Bun](https://bun.sh) | Primary JS runtime & toolkit |
+| [Node.js](https://nodejs.org) 18+ | Alternative runtime |
+| [TypeScript](https://www.typescriptlang.org/) | Type-safe client API |
+
+## Features
+
+- **Redis-like API** — familiar method names and semantics
+- **TTL support** — expire keys automatically
+- **Atomic operations** — safe increments/decrements
+- **Batch operations** — operate on multiple keys at once
+- **Persistent storage** — durable, backed by SQLite
+- **Auto cleanup** — expired keys are purged automatically
+- **Pattern matching** — `keys()` and `scan()` support glob patterns
+- **Distributed locks** — coordinate across processes
+
+## Installation
+
+```bash
+# Bun
+bun add turso-redis-client
+
+# npm
+npm install turso-redis-client
 ```
-</div>
 
-# 📦 Tech Stack
+## Quick Start
 
-<div align="center">
-Technology	Logo	Description
-Turso	<img src="https://avatars.githubusercontent.com/u/109169772?s=48&v=4" width="32" height="32">	Distributed SQLite Database
-Bun	<img src="https://bun.sh/logo.svg" width="32" height="32">	JavaScript Runtime & Toolkit
-Node.js	<img src="https://nodejs.org/static/images/logo.svg" width="32" height="32">	JavaScript Runtime
-TypeScript	<img src="https://www.typescriptlang.org/icons/icon-48x48.png" width="32" height="32">	Typed JavaScript
-</div>
+```ts
+import { createClient } from "turso-redis-client";
 
+const client = createClient({
+  url: process.env.TURSO_DATABASE_URL!,
+  authToken: process.env.TURSO_AUTH_TOKEN!,
+});
 
-# ✨ Features
-
-```mermaid
-<div align="center">
-graph LR
-    A[🚀 Redis-like API] --> B[⏱️ TTL Support]
-    B --> C[🔄 Atomic Ops]
-    C --> D[🎯 Batch Operations]
-    D --> E[🗄️ Persistent Storage]
-    E --> F[🧹 Auto Cleanup]
-    F --> G[📊 Pattern Matching]
-    G --> H[🔒 Distributed Locks]
-</div>
+await client.set("session:123", "active", 3600); // expires in 1h
+const value = await client.get("session:123");
 ```
-# Commands
-<div align="center">
-🎯 Core Commands
-Command	Description	3D Visualization
-set(key, value, ttl?)	Store a value	📦 ➔ 📝
-get(key)	Retrieve a value	📝 ➔ 📦
-del(...keys)	Delete keys	🗑️ ➔ ❌
-exists(key)	Check existence	🔍 ➔ ✅
 
-⏱️ TTL Commands
-Command	Description	3D Visualization
-ttl(key)	Get remaining time	⏱️ ➔ 📊
-expire(key, seconds)	Set expiration	📅 ➔ ⏰
-persist(key)	Remove TTL	⏰ ➔ ♾️
+## Commands
 
-🔢 Numeric Commands
-Command	Description	3D Visualization
-incr(key)	Increment by 1	📊 ➔ 📈
-incrby(key, n)	Increment by n	📊 ➔ 📈📈
-decr(key)	Decrement by 1	📊 ➔ 📉
+### Core
 
-🔍 Scan Commands
-Command	Description	3D Visualization
-keys(pattern)	List keys	🔑 ➔ 📋
-scan(cursor, pattern)	Paginate keys	📄 ➔ 📑
-</div>
+| Command | Description |
+|---|---|
+| `set(key, value, ttl?)` | Store a value, optionally with a TTL (seconds) |
+| `get(key)` | Retrieve a value |
+| `del(...keys)` | Delete one or more keys |
+| `exists(key)` | Check whether a key exists |
 
+### TTL
+
+| Command | Description |
+|---|---|
+| `ttl(key)` | Get remaining time-to-live for a key |
+| `expire(key, seconds)` | Set/update a key's expiration |
+| `persist(key)` | Remove a key's TTL (make it permanent) |
+
+### Numeric
+
+| Command | Description |
+|---|---|
+| `incr(key)` | Increment a value by 1 |
+| `incrby(key, n)` | Increment a value by `n` |
+| `decr(key)` | Decrement a value by 1 |
+
+### Scan
+
+| Command | Description |
+|---|---|
+| `keys(pattern)` | List keys matching a glob pattern |
+| `scan(cursor, pattern)` | Paginate through keys matching a pattern |
+
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+[MIT](LICENSE)
