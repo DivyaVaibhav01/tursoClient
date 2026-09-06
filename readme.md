@@ -1,6 +1,46 @@
 <div align="center">
 
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIzMDAiIHZpZXdCb3g9IjAgMCAxMjAwIDMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDUwODA1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMGExYTEyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBjMjQxOCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRGRjhEMiIgc3RvcC1vcGFjaXR5PSIwLjM1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRGRjhEMiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2JnKSIvPgoKICA8ZWxsaXBzZSBjeD0iMTYwIiBjeT0iMTUwIiByeD0iMTUwIiByeT0iMTUwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+CgogIDxnIGZpbGw9IiM0RkY4RDIiIG9wYWNpdHk9IjAuMiI+CiAgICA8Y2lyY2xlIGN4PSI5ODAiIGN5PSI0MCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTA0MCIgY3k9IjkwIiByPSIxLjUiLz4KICAgIDxjaXJjbGUgY3g9IjkwMCIgY3k9IjcwIiByPSIxLjUiLz4KICAgIDxjaXJjbGUgY3g9IjExMDAiIGN5PSI1MCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTE1MCIgY3k9IjEyMCIgcj0iMS41Ii8+CiAgICA8Y2lyY2xlIGN4PSI2MCIgY3k9IjI0MCIgcj0iMS41Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIyNjUiIHI9IjEuNSIvPgogICAgPGNpcmNsZSBjeD0iMTAwMCIgY3k9IjI0MCIgcj0iMS41Ii8+CiAgPC9nPgoKICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MCw4MCkgc2NhbGUoMC43KSI+CiAgICA8cGF0aCBkPSJNMTcxLjc2NSAwVjMwLjc4TDE1Ny4yMjUgMzQuNTNMMTQ4LjExNSAyMy41NkwxNDMuMzA1IDMzLjAyQzEzMy4zODUgMzAuMzIgMTE5LjcyNSAyOC41OCAxMDAuOTM1IDI4LjU4QzgyLjE0NTEgMjguNTggNjguNDg1MSAzMC4zMyA1OC41NjUxIDMzLjAyTDUzLjc1NTEgMjMuNTZMNDQuNjQ1MSAzNC41M0wzMC4xMDUxIDMwLjc4VjBDMzAuMTA1MSAwIDUuNjE1MDcgMjAuNjcgMC45NDUwNjggNDguNjFMMzMuMDg1MSA1OS43M0MzNC4xMzUxIDc5LjE2IDQyLjg3NTEgMTMxLjYxIDQ1LjM3NTEgMTM2LjM3QzQ4LjAzNTEgMTQxLjQ0IDYyLjE1NTEgMTU1LjkzIDczLjIwNTEgMTYxLjVDNzMuMjA1MSAxNjEuNSA3Ny4yMDUxIDE1Ny4yNyA3OS42NDUxIDE1My41NEM4Mi43NDUxIDE1Ny4xOSA5OC43NTUxIDE2OS45OSAxMDAuOTQ1IDE2OS45OUMxMDMuMTM1IDE2OS45OSAxMTkuMTQ1IDE1Ny4xOSAxMjIuMjQ1IDE1My41NEMxMjQuNjg1IDE1Ny4yNyAxMjguNjg1IDE2MS41IDEyOC42ODUgMTYxLjVDMTM5LjczNSAxNTUuOTMgMTUzLjg1NSAxNDEuNDQgMTU2LjUxNSAxMzYuMzdDMTU5LjAxNSAxMzEuNjEgMTY3Ljc1NSA3OS4xNiAxNjguODA1IDU5LjczTDIwMC45NDUgNDguNjFDMTk2LjI1NSAyMC42NyAxNzEuNzY1IDAgMTcxLjc2NSAwWk0xNTQuNzI1IDkzLjM2TDEzMi45NzUgOTUuM0wxMzQuODg1IDEyMS45N0MxMzQuODg1IDEyMS45NyAxMjEuNjU1IDEzMi45MiAxMDAuOTI1IDEzMi45MkM4MC4xOTUxIDEzMi45MiA2Ni45NjUxIDEyMS45NyA2Ni45NjUxIDEyMS45N0w2OC44NzUxIDk1LjNMNDcuMTI1MSA5My4zNkw0My40MDUxIDYzLjMyTDc5LjQ1NTEgNzUuOEw3Ni42NTUxIDExMy4xOUM4My4zNTUxIDExNC44OSA5MC40MDUxIDExNi41OCAxMDAuOTM1IDExNi41OEMxMTEuNDY1IDExNi41OCAxMTguNTA1IDExNC44OSAxMjUuMjA1IDExMy4xOUwxMjIuNDA1IDc1LjhMMTU4LjQ1NSA2My4zMkwxNTQuNzM1IDkzLjM2SDE1NC43MjVaIiBmaWxsPSIjNEZGOEQyIi8+CiAgPC9nPgoKICA8dGV4dCB4PSI2NDAiIHk9IjEzNSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4KICAgIFR1cnNvIENsaWVudAogIDwvdGV4dD4KICA8dGV4dCB4PSI2NDAiIHk9IjE3OCIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjOGZkNmMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4KICAgIEEgUmVkaXMtbGlrZSBrZXktdmFsdWUgc3RvcmUsIHBvd2VyZWQgYnkgVHVyc28gKFNRTGl0ZSkKICA8L3RleHQ+CgogIDxyZWN0IHg9IjUyMCIgeT0iMjAwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjQiIHJ4PSIyIiBmaWxsPSIjNEZGOEQyIi8+Cjwvc3ZnPgo=" alt="Turso Client banner" width="100%" />
+<svg width="100%" height="220" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050805"/>
+      <stop offset="50%" stop-color="#0a1a12"/>
+      <stop offset="100%" stop-color="#0c2418"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4FF8D2" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4FF8D2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <ellipse cx="160" cy="150" rx="150" ry="150" fill="url(#glow)"/>
+
+  <g fill="#4FF8D2" opacity="0.2">
+    <circle cx="980" cy="40" r="2"/>
+    <circle cx="1040" cy="90" r="1.5"/>
+    <circle cx="900" cy="70" r="1.5"/>
+    <circle cx="1100" cy="50" r="2"/>
+    <circle cx="1150" cy="120" r="1.5"/>
+    <circle cx="60" cy="240" r="1.5"/>
+    <circle cx="120" cy="265" r="1.5"/>
+    <circle cx="1000" cy="240" r="1.5"/>
+  </g>
+
+  <g transform="translate(60,80) scale(0.7)">
+    <path d="M171.765 0V30.78L157.225 34.53L148.115 23.56L143.305 33.02C133.385 30.32 119.725 28.58 100.935 28.58C82.1451 28.58 68.4851 30.33 58.5651 33.02L53.7551 23.56L44.6451 34.53L30.1051 30.78V0C30.1051 0 5.61507 20.67 0.945068 48.61L33.0851 59.73C34.1351 79.16 42.8751 131.61 45.3751 136.37C48.0351 141.44 62.1551 155.93 73.2051 161.5C73.2051 161.5 77.2051 157.27 79.6451 153.54C82.7451 157.19 98.7551 169.99 100.945 169.99C103.135 169.99 119.145 157.19 122.245 153.54C124.685 157.27 128.685 161.5 128.685 161.5C139.735 155.93 153.855 141.44 156.515 136.37C159.015 131.61 167.755 79.16 168.805 59.73L200.945 48.61C196.255 20.67 171.765 0 171.765 0ZM154.725 93.36L132.975 95.3L134.885 121.97C134.885 121.97 121.655 132.92 100.925 132.92C80.1951 132.92 66.9651 121.97 66.9651 121.97L68.8751 95.3L47.1251 93.36L43.4051 63.32L79.4551 75.8L76.6551 113.19C83.3551 114.89 90.4051 116.58 100.935 116.58C111.465 116.58 118.505 114.89 125.205 113.19L122.405 75.8L158.455 63.32L154.735 93.36H154.725Z" fill="#4FF8D2"/>
+  </g>
+
+  <text x="640" y="135" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="50" font-weight="700" fill="#ffffff" text-anchor="middle">
+    Turso Client
+  </text>
+  <text x="640" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#8fd6c1" text-anchor="middle">
+    A Redis-like key-value store, powered by Turso (SQLite)
+  </text>
+
+  <rect x="520" y="200" width="240" height="4" rx="2" fill="#4FF8D2"/>
+</svg>
 
 # Turso Client
 
@@ -9,6 +49,9 @@
 [![Bun](https://img.shields.io/badge/Bun-1.3.14-000000?style=flat-square&logo=bun&logoColor=white)](https://bun.sh)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![npm version](https://img.shields.io/npm/v/turso-client?style=flat-square&color=4FF8D2)](https://www.npmjs.com/package/turso-client)
+[![License: MIT](https://img.shields.io/badge/License-MIT-4FF8D2?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-4FF8D2?style=flat-square)](CONTRIBUTING.md)
 
 </div>
 
