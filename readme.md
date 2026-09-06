@@ -1,3 +1,4 @@
+<div align="center">
 # Turso Client
 
 **A key value store built on Turso (SQLite)**
