@@ -2,7 +2,7 @@
 
 <div style="display: flex; align-items: center; gap: 0;">
     <img src="https://github.com/DivyaVaibhav01/tursoClient/blob/main/extra/turso.svg" alt="Turso Logo" style="height: 100px; width: auto; display: block;" />
-    <span style="font-size: 100px; font-weight: bold; line-height: 1;">Client</span>
+    <span style="font-size: 100px; font-weight: bold; line-height: 1;">## Client</span>
 </div>
 
 **A key value store built on Turso (SQLite)**
