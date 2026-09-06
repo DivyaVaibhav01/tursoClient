@@ -89,7 +89,7 @@ import { createClient } from "turso-client";
 
 const client = createClient({
   url: process.env.TURSO_DATABASE_URL!,
-  authToken: process.env.TURSO_AUTH_TOKEN!,
+  token: process.env.TURSO_AUTH_TOKEN!,
 });
 
 await client.set("session:123", "active", 3600); // expires in 1h
