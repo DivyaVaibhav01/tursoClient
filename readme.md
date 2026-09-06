@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050805,50:0a1a12,100:0c2418&height=220&section=header&text=Turso%20Client&fontColor=4FF8D2&fontSize=48&fontAlignY=38&desc=A%20Redis-like%20key-value%20store%2C%20powered%20by%20Turso%20(SQLite)&descAlignY=58&descSize=18&descColor=8FD6C1&animation=fadeIn" alt="Turso Client banner" />
+<img width="100%" src="./banner.svg" alt="Turso Client banner" />
 
 # Turso Client
 
