@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/DivyaVaibhav01/tursoClient/blob/main/extra/turso.svg" alt="Turso Logo" width="200" />
-
-# Turso Client
+<img src="https://github.com/DivyaVaibhav01/tursoClient/blob/main/extra/turso.svg" alt="Turso Logo" width="200" /> Client
 
 **A key value store built on Turso (SQLite)**
 
