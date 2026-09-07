@@ -76,10 +76,10 @@ flowchart LR
 
 ```bash
 # Bun
-bun add turso-client
+bun add https://github.com/DivyaVaibhav01/tursoClient.git
 
 # npm
-npm install turso-client
+npm install https://github.com/DivyaVaibhav01/tursoClient.git
 ```
 
 ## Quick Start
