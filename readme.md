@@ -85,13 +85,16 @@ npm install turso-client
 ## Quick Start
 
 ```ts
-import { createClient } from "turso-client";
+import tursoClient from "tursoClient/client";
 
 const client = new createClient({
   url: process.env.TURSO_DATABASE_URL!,
   token: process.env.TURSO_AUTH_TOKEN!,
 });
 
+client.on(() => {
+      console.log("conntected to db");
+});
 await client.set("session:123", "active", 3600); // expires in 1h
 const value = await client.get("session:123");
 ```
