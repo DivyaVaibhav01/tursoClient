@@ -87,7 +87,7 @@ npm install turso-client
 ```ts
 import { createClient } from "turso-client";
 
-const client = createClient({
+const client = new createClient({
   url: process.env.TURSO_DATABASE_URL!,
   token: process.env.TURSO_AUTH_TOKEN!,
 });
