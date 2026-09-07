@@ -92,11 +92,29 @@ const client = new createClient({
   token: process.env.TURSO_AUTH_TOKEN!,
 });
 
-client.on(() => {
-      console.log("conntected to db");
+client.on('ready', async () => {
+    console.log('Client is ready');
+
+    await client.set('vData', {
+        enviroment: 'turso',
+        project: "tursoClient"
+    }).then(async (result) => {
+        console.log('Set result:', result);
+
+        await client.get('vData').then((value) => {
+            console.log('Get value:', value);
+        }).catch((error) => {
+            console.error('Get error:', error);
+        });
+    }).catch((error) => {
+        console.error('Set error:', error);
+    });
 });
-await client.set("session:123", "active", 3600); // expires in 1h
-const value = await client.get("session:123");
+
+
+client.on('error', (error) => {
+    console.error('Error:', error);
+});   
 ```
 
 ## Commands
