@@ -12,9 +12,10 @@
 
 ## Overview
 
-Turso Client gives you a familiar Redis-style API system — backed by [Turso](https://turso.tech), 
+TursoClient gives you a familiar key value style system — backed by [Turso](https://turso.tech), 
 Turso is a distributed SQLite database. 
-Use tursoClient it when you want Redis-like ergonomics without running a separate Redis instance, and you're already on (or want) SQLite-based storage.
+Use tursoClient it when you want easy key ergonomics without running a separate sql table models.
+
 ## Features
 
 - **Key Value API** — familiar method names and semantics
