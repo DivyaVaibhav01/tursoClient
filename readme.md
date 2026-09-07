@@ -20,19 +20,9 @@
 Turso Client gives you a familiar Redis-style API system — backed by [Turso](https://turso.tech), 
 Turso is a distributed SQLite database. 
 Use tursoClient it when you want Redis-like ergonomics without running a separate Redis instance, and you're already on (or want) SQLite-based storage.
-
-## Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| [Turso](https://turso.tech) | Distributed SQLite database (storage layer) |
-| [Bun](https://bun.sh) | Primary JS runtime & toolkit |
-| [Node.js](https://nodejs.org) 18+ | Alternative runtime |
-| [TypeScript](https://www.typescriptlang.org/) | Type-safe client API |
-
 ## Features
 
-- **Redis-like API** — familiar method names and semantics
+- **Key Value API** — familiar method names and semantics
 - **TTL support** — expire keys automatically
 - **Atomic operations** — safe increments/decrements
 - **Batch operations** — operate on multiple keys at once
